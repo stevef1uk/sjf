@@ -1,0 +1,5 @@
+CREATE TABLE test.accounts (
+    id int,
+    name text,
+    PRIMARY KEY (id, name)
+) WITH CLUSTERING ORDER BY (name ASC)

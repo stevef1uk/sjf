@@ -1,0 +1,30 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: sjf
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      build:
+        serviceAccountName: build-bot
+        source:
+          git:
+            url: https://github.com/stevef1uk/sjf.git
+            revision: master
+        template:
+          name: kaniko
+          arguments:
+          - name: IMAGE
+            value: docker.io/stevef1uk/sjf:latest
+      revisionTemplate:
+        spec:
+          container:
+            image: docker.io/stevef1uk/sjf:latest 
+            imagePullPolicy: Always
+            env:
+            - name: HOST
+              value: "0.0.0.0"
+            - name: PORT
+              value: "5000"
+

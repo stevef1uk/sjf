@@ -2,8 +2,8 @@
 package data
 
 import (
-  "sjf/models"
-  "sjf/restapi/operations"
+  "github.com/stevef1uk/sjf/models"
+  "github.com/stevef1uk/sjf/restapi/operations"
     middleware "github.com/go-openapi/runtime/middleware"
     "github.com/gocql/gocql"
     "os"

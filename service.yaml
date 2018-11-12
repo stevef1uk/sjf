@@ -26,5 +26,5 @@ spec:
             - name: HOST
               value: "0.0.0.0"
             - name: PORT
-              value: "5000"
+              value: "6000"
 

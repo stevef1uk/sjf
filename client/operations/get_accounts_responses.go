@@ -13,7 +13,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "sjf/models"
+	models "github.com/stevef1uk/sjf/models"
 )
 
 // GetAccountsReader is a Reader for the GetAccounts structure.

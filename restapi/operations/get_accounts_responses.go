@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	models "sjf/models"
+	models "github.com/stevef1uk/sjf/models"
 )
 
 // GetAccountsOKCode is the HTTP code returned for type GetAccountsOK

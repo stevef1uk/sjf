@@ -11,8 +11,8 @@ import (
 	middleware "github.com/go-openapi/runtime/middleware"
 	graceful "github.com/tylerb/graceful"
 
-	"sjf/restapi/operations"
-	"sjf/data"
+	"github.com/stevef1uk/sjf/restapi/operations"
+	"github.com/stevef1uk/sjf/data"
 
 )
 

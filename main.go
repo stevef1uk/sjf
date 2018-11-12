@@ -3,11 +3,11 @@ package main
 import (
   "log"
 
-  "sjf/client/operations"
+  "github.com/stevef1uk/sjf/client/operations"
   "github.com/go-openapi/strfmt"
   "github.com/go-openapi/spec"
 
-  apiclient "sjf/client"
+  apiclient "github.com/stevef1uk/sjf/client"
   httptransport "github.com/go-openapi/runtime/client"
 )
 

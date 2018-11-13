@@ -6,17 +6,6 @@ metadata:
 spec:
   runLatest:
     configuration:
-      build:
-        serviceAccountName: build-bot
-        source:
-          git:
-            url: https://github.com/stevef1uk/sjf.git
-            revision: master
-        template:
-          name: kaniko
-          arguments:
-          - name: IMAGE
-            value: docker.io/stevef1uk/sjf:latest
       revisionTemplate:
         spec:
           container:

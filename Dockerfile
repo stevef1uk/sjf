@@ -15,6 +15,6 @@ FROM golang:alpine
 COPY --from=0 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=0 /go/src/github.com/stevef1uk/sjf/main /go/bin/main
 # Run the outyet command by default when the container starts.
-CMD ["/go/bin/main"]
+CMD ["/go/bin/main --port 6000"]
 # Document that the service listens on port 6000
 EXPOSE 6000

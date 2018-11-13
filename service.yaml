@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
   name: sjf
-  namespace: default
+  namespace: cassandra
 spec:
   runLatest:
     configuration:
@@ -28,5 +28,5 @@ spec:
             - name: PORT
               value: "6000"
             - name: CASSANDRA_SERVICE_HOST
-              value: "glusterfs-dynamic-data-cassandra-0"
+              value: "cassandra-0.cassandra.cassandra.svc.cluster.local"
 
